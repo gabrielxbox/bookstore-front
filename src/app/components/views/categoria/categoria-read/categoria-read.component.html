@@ -3,6 +3,8 @@
     <h1>Categorias</h1>
   </div>
 
+  <button class="mat-elevation-z8"  mat-button  color = "primary"> Nova Categoria </button>
+
   <div class="mat-elevation-z8 content-table">
     <table  class="table" mat-table class="mat-elevation-z8" [dataSource]="categorias">
 
@@ -24,10 +26,41 @@
       <td mat-cell *matCellDef="let row"> {{row.descricao}} </td>
     </ng-container>
 
+
+      <!-- Weight Column -->
+      <ng-container matColumnDef="livros">
+        <th mat-header-cell *matHeaderCellDef> livros </th>
+        <td mat-cell *matCellDef="let row">
+         <a href="#">
+          <mat-icon class="livros"
+            mat-icon
+            aria-hidden = "false"
+            aria-label = "Example book icon" >
+            book
+          </mat-icon >
+         </a>
+        </td>
+      </ng-container>
+
+
     <!-- Symbol Column -->
     <ng-container matColumnDef="acoes">
-      <th mat-header-cell *matHeaderCellDef> AÇÕES </th>
-      <td mat-cell *matCellDef="let row"> {{row.acoes}} </td>
+      <th class="mat-header" mat-header-cell *matHeaderCellDef> AÇÕES </th>
+      <td mat-cell *matCellDef="let row">
+
+        <a class="edit" href="#">
+          <i class="material-icons">edit</i>
+        </a>
+
+        <a class="delete" href="#">
+          <mat-icon mat-icon
+                    aria-hidden = "false"
+                    aria-label = "Example home icon" >
+                                    delete
+          </mat-icon >
+       </a>
+
+      </td>
     </ng-container>
 
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>

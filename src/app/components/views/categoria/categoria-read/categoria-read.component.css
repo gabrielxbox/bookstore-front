@@ -9,6 +9,11 @@
   margin-bottom: 3rem;
 }
 
+button {
+  margin-bottom: 1rem;
+}
+
+
 .title h1 {
   font-size: 2rem;
   color: rgb(90, 90, 90);
@@ -18,4 +23,23 @@
 
 table {
   width: 100%;
+}
+
+
+.edit {
+  color: rgb(206, 173, 24);
+
+}
+
+.delete {
+  color: rgb(211, 56, 56);
+}
+
+.mat-header {
+width: 6rem;
+}
+
+.livros {
+  margin-left: .3rem;
+  color: rgba(48, 61, 240, 0.808);
 }

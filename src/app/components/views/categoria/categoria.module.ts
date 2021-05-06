@@ -1,5 +1,6 @@
-export class CategoriaModule {
+export interface  CategoriaModule {
   id?: string;
   nome: string;
   descricao: string;
+
 }

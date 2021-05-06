@@ -1,3 +1,4 @@
+import { CategoriaDeliteComponent } from './components/views/categoria/categoria-delite/categoria-delite.component';
 import { AppRoutingModule } from './app-routing.module';
 import { MaterialModule } from './material/material.module';
 import { MatNativeDateModule } from '@angular/material/core';
@@ -25,6 +26,7 @@ import { CategoriaCreateComponent } from './components/views/categoria/categoria
     HomeComponent,
     CategoriaReadComponent,
     CategoriaCreateComponent,
+    CategoriaDeliteComponent,
   ],
   imports: [
     BrowserModule,

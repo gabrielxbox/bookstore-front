@@ -26,7 +26,7 @@ export class CategoriaCreateComponent implements OnInit {
       this.router.navigate(["categorias"]);
       this.service.mensagem("Categoria Criada Com Sucesso!");
     }, err => {
-        this.service.mensagemError(err);
+        this.service.mensagemErrors(err);
 
     })
 

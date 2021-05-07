@@ -1,0 +1,21 @@
+<form>
+  <h1 s mat-elevation-z8 >CRIAÇÂO ATUALIZAR</h1>
+    <mat-form-field class="form" appearance="legacy">
+      <mat-label>Nome</mat-label>
+        <input matInput  [(ngModel)]="categoria.nome" name="nome" type="text" placeholder="Ex. computação">
+    </mat-form-field>
+
+    <mat-form-field class="form" appearance="legacy">
+      <mat-label>descricao</mat-label>
+      <textarea matInput [(ngModel)]="categoria.descricao" name="descricao" type="text" placeholder="Ex. computação"></textarea>
+    </mat-form-field>
+
+      <div class="buttons">
+        <button class="mat-elevation-z8"  mat-button
+         color="primary" (click)="aualizar()" > Aualizar </button>
+
+         <button class="mat-elevation-z8"  mat-button
+          color="warn" (click)="cancelar()"> Cancelar </button>
+
+    </div>
+</form>

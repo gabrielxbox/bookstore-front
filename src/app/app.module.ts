@@ -1,3 +1,4 @@
+import { CategoriaUpdateComponent } from './components/views/categoria/categoria-update/categoria-update.component';
 import { CategoriaDeliteComponent } from './components/views/categoria/categoria-delite/categoria-delite.component';
 import { AppRoutingModule } from './app-routing.module';
 import { MaterialModule } from './material/material.module';
@@ -27,6 +28,7 @@ import { CategoriaCreateComponent } from './components/views/categoria/categoria
     CategoriaReadComponent,
     CategoriaCreateComponent,
     CategoriaDeliteComponent,
+    CategoriaUpdateComponent,
   ],
   imports: [
     BrowserModule,

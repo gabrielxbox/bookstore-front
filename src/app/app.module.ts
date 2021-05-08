@@ -16,6 +16,7 @@ import { CategoriaReadComponent } from './components/views/categoria/categoria-r
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { CategoriaCreateComponent } from './components/views/categoria/categoria-create/categoria-create.component';
+import { LivroReadAllComponent } from './components/views/livro/livro-read-all/livro-read-all.component';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { CategoriaCreateComponent } from './components/views/categoria/categoria
     CategoriaCreateComponent,
     CategoriaDeliteComponent,
     CategoriaUpdateComponent,
+    LivroReadAllComponent,
   ],
   imports: [
     BrowserModule,

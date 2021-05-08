@@ -17,6 +17,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { CategoriaCreateComponent } from './components/views/categoria/categoria-create/categoria-create.component';
 import { LivroReadAllComponent } from './components/views/livro/livro-read-all/livro-read-all.component';
+import { LivroCreateComponent } from './components/views/livro/livro-create/livro-create.component';
+import { LivroUpdateComponent } from './components/views/livro/livro-update/livro-update.component';
+import { LivroDeleteComponent } from './components/views/livro/livro-delete/livro-delete.component';
 
 
 @NgModule({
@@ -31,6 +34,9 @@ import { LivroReadAllComponent } from './components/views/livro/livro-read-all/l
     CategoriaDeliteComponent,
     CategoriaUpdateComponent,
     LivroReadAllComponent,
+    LivroCreateComponent,
+    LivroUpdateComponent,
+    LivroDeleteComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,35 @@
+<form>
+  <h1 s mat-elevation-z8 >ATUALIZANDO NOVA LIVRO</h1>
+    <mat-form-field class="form" appearance="legacy">
+      <mat-label>titulo</mat-label>
+        <input matInput [(ngModel)]="livro.titulo"  [formControl]="titulo" required name="titulo" type="text" placeholder="Ex. computação">
+
+        <mat-error *ngIf="titulo.invalid">{{getMensagem()}} </mat-error>
+
+      </mat-form-field>
+
+    <mat-form-field class="form" appearance="legacy">
+      <mat-label>Nome do Autor</mat-label>
+        <input matInput [(ngModel)]="livro.nome_autor" [formControl]="nome_autor"
+               name="nome_autor" type="text"
+              placeholder="Ex. computação" maxlength="100">
+      <mat-error *ngIf="titulo.invalid">{{getMensagem()}} </mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="form" appearance="legacy">
+      <mat-label>Texto</mat-label>
+      <textarea matInput [(ngModel)]="livro.texto"  [formControl]="texto"
+                name="texto" type="text" placeholder="Ex. computação"
+                maxlength="200000"></textarea>
+      <mat-error *ngIf="titulo.invalid">{{getMensagem()}} </mat-error>
+    </mat-form-field>
+
+      <div class="buttons">
+        <button class="mat-elevation-z8"  mat-button
+         color="primary" (click)="ubdate()" [disabled]="!getMensagem()" > Atualizar </button>
+
+         <button class="mat-elevation-z8"  mat-button
+          (click)="Cancel()" color="warn"> Cancelar </button>
+
+    </div>
+</form>
